@@ -1,1 +1,1 @@
-//bất đồng bộ - asynchronous
+//bất đồng bộ - asynchronous 
