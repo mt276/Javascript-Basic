@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Code</title>
+</head>
+
+<body>
+    <h1>Các Status Code API Thường Gặp</h1>
+    <h2>Nhóm 1xx - Thông tin (Informational Responses)</h2>
+    <ul>
+        <li><strong>100 Continue</strong> - <strong>Tiếp tục</strong> - Máy chủ đã nhận được phần đầu của request và client có thể tiếp
+            tục gửi phần còn lại..</li>
+        <li><strong>101 Switching Protocols</strong> - <strong>Chuyển đổi giao thức</strong> - Khi trình duyệt chuyển đổi từ HTTP sang
+            WebSocket hoặc HTTP/2.</li>
+        <li><strong>102 Processing</strong> - <strong>Đang xử lý</strong> - Yêu cầu không hợp lệ hoặc sai cú pháp.</li>
+        <li><strong>103 Early Hints</strong> - <strong>Gợi ý sớm </strong>- Dùng để tăng tốc tải trang web bằng cách gửi gợi ý về tài
+            nguyên sẽ cần trước khi có phản hồi chính thức.</li>
+    </ul>
+    <h2>Nhóm 2xx -Phản hồi Thành công (Successful responses)</h2>
+    <ul>
+        <li style="color:rgb(206, 68, 68)"><strong>200 OK</strong> - Yêu cầu thành công, dữ liệu trả về như mong đợi.</li>
+        <li style="color:rgb(206, 68, 68)"><strong>201 Created</strong> - Dữ liệu được tạo thành công (thường gặp khi POST).</li>
+        <li style="color:rgb(206, 68, 68)"><strong>204 No Content</strong> - Yêu cầu thành công nhưng không có dữ liệu trả về.</li>
+    </ul>
+    <h2>Nhóm 3xx - Chuyển hướng (Redirects)</h2>
+    <ul>
+        <li><strong>301 Moved Permanently</strong> - Tài nguyên đã được di chuyển vĩnh viễn.</li>
+        <li><strong>302 Found (Moved Temporarily)</strong> - Tài nguyên tạm thời được chuyển hướng.</li>
+        <li><strong>304 Not Modified</strong> - Dữ liệu không thay đổi, trình duyệt có thể dùng cache.</li>
+    </ul>
+    <h2>Nhóm 4xx - Lỗi từ phía Client (Client errors)</h2>
+    <ul>
+        <li style="color:rgb(206, 68, 68)"><strong>400 Bad Request</strong> - Yêu cầu sai hoặc không hợp lệ.</li>
+        <li style="color:rgb(206, 68, 68)"><strong>401 Unauthorized</strong> - Chưa đăng nhập hoặc không có quyền truy cập.</li>
+        <li style="color:rgb(206, 68, 68)"><strong>403 Forbidden</strong> - Bị từ chối truy cập dù đã đăng nhập.</li>
+        <li style="color:rgb(206, 68, 68)"><strong>404 Not Found</strong> - Không tìm thấy tài nguyên.</li>
+        <li><strong>405 Method Not Allowed</strong> - Phương thức HTTP không được hỗ trợ.</li>
+        <li><strong>429 Too Many Requests</strong> - Gửi quá nhiều request trong một khoảng thời gian.</li>
+    </ul>
+    <h2>Nhóm 5xx - Lỗi từ Server(Server errors)</h2>
+    <ul>
+        <li style="color:rgb(206, 68, 68)"><strong>500 Internal Server Error</strong> - Lỗi server không xác định.</li>
+        <li><strong>502 Bad Gateway</strong> - Máy chủ trung gian nhận phản hồi không hợp lệ từ server khác.</li>
+        <li style="color:rgb(206, 68, 68)"><strong>503 Service Unavailable</strong> - Dịch vụ tạm thời không khả dụng.</li>
+        <li><strong>504 Gateway Timeout </strong> - Máy chủ trung gian không nhận được phản hồi từ server khác đúng hạn.</li>
+    </ul>
+</body>
+
+</html>
